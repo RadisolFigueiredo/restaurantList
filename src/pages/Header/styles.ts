@@ -14,10 +14,11 @@ export const Container = styled.div`
 `;
 
 export const BoxHeader = styled.div`
-  padding: 37px 165px 0 165px;
+  padding-top: 37px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 `;
 
 export const BoxLogo = styled(Link)``;
