@@ -48,6 +48,7 @@ export const Image = styled.div<ImageProps>`
   ${({ image }) => css`
     width: 350px;
     height: 170px;
+    border-radius: 8px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 170px;
