@@ -2,19 +2,10 @@ import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
-  margin: 0 355px;
+  padding: 0 20%;
   display: flex;
-  justify-content: space-between;
-  @media (max-width: 768px) {
-    width: 100%;
-    justify-content: center;
-    margin: 0;
-  }
-  @media (max-width: 992px) {
-    width: 100%;
-    margin: 0;
-    padding: 0 20px;
-  }
+  width: 100%;
+  justify-content: center;
 `;
 
 export const Box = styled.div`
@@ -27,7 +18,7 @@ export const Title = styled.h2`
   font-size: 24px;
   font-weight: 700;
   color: #333333;
-  margin: 30px 10px;
+  margin: 30px 6%;
   width: 100%;
 `;
 
@@ -35,13 +26,7 @@ export const BoxCard = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  @media (max-width: 768px) {
-    justify-content: space-evenly;
-  }
-  @media (max-width: 992px) {
-    justify-content: space-evenly;
-  }
+  justify-content: space-evenly;
 `;
 
 export const Card = styled(Link)`
@@ -53,14 +38,6 @@ export const Card = styled(Link)`
   max-width: 350px;
   margin-bottom: 30px;
   cursor: pointer;
-  @media (max-width: 768px) {
-    width: 200px;
-    max-width: 250px;
-  }
-  @media (max-width: 992px) {
-    width: 300px;
-    max-width: 300px;
-  }
 `;
 
 interface ImageProps {
