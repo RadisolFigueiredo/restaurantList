@@ -14,6 +14,11 @@ export const Box = styled.div`
   width: 100%;
 `;
 
+export const BoxTitle = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
 export const Title = styled.h2`
   font-size: 24px;
   font-weight: 700;
@@ -22,6 +27,25 @@ export const Title = styled.h2`
   width: 100%;
 `;
 
+export const BoxResultSearch = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 173px;
+`;
+
+export const TextResult = styled.p`
+  font-size: 14px;
+  font-weight: 400;
+  color: #aaaaaa;
+  text-align: end;
+`;
+
+export const TextTerm = styled.h5`
+  font-size: 18px;
+  font-weight: 700;
+  text-align: end;
+`;
 export const BoxCard = styled.div`
   display: flex;
   flex-direction: row;

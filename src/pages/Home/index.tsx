@@ -6,11 +6,24 @@ const Home = ({ filteredRestaurant }: any) => {
   const { restaurantList } = useContext(RestaurantContext);
 
   const data = filteredRestaurant.length ? filteredRestaurant : restaurantList;
+
+  const title = filteredRestaurant.length ? 'Resultados' : 'Restaurantes';
+
   return (
     <S.Container>
       <S.Box>
+        <S.BoxTitle>
+          <S.Title>{title}</S.Title>
+          {title === 'Resultados' && (
+            <S.BoxTitle>
+              <S.BoxResultSearch>
+                <S.TextResult>Resultados para</S.TextResult>
+                <S.TextTerm>Termo pesquisado</S.TextTerm>
+              </S.BoxResultSearch>
+            </S.BoxTitle>
+          )}
+        </S.BoxTitle>
         <S.BoxCard>
-        <S.Title>Restaurantes</S.Title>
           {data?.map((item) => {
             return (
               <S.Card
